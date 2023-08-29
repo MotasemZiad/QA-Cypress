@@ -63,4 +63,10 @@ describe("Navigation Test Suite", () => {
       .should("have.attr", "href", "https://waset.sa#our-financing")
       .click();
   });
+
+  it("The localization of the page should be changed to Arabic", () => {
+    cy.get(".content-links > .links :nth-child(4)").click();
+    cy.get("html").should("have.attr", "lang", "ar");
+    cy.get("html").should("have.attr", "dir", "rtl");
+  });
 });
