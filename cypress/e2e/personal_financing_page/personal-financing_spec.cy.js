@@ -5,7 +5,6 @@ describe("Personal Financing Calculator Test Suite", () => {
 
   it("User should be able to enter his data", () => {
     enterPersonalFinancingInformation();
-
     // Go to the next step
     cy.get("input[name='name']").type("hany srour");
     cy.get("input[name='mobile']").type("966500000000");
