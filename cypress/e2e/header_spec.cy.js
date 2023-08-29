@@ -17,6 +17,10 @@ describe("Navigation Test Suite", () => {
       .click();
   });
 
+  it("Logo should have an alt attribute", () => {
+    cy.get(".logo-div > a img").should("have.attr", "alt", "Waset Logo");
+  });
+
   it("Navigation Links be 5 list items", () => {
     cy.get(".content-links > .links").children().should("have.length", 5);
   });
@@ -26,7 +30,7 @@ describe("Navigation Test Suite", () => {
   });
 
   it("Home navigation list item should be clickable", () => {
-    cy.get(".content-links > :nth-child(1)")
+    cy.get(".content-links > .links > :nth-child(1)")
       .contains("Home")
       .should("have.attr", "href", "https://waset.sa")
       .click();
