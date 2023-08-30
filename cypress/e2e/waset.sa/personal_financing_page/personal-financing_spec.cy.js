@@ -1,5 +1,7 @@
+/// <reference types="cypress" />
+
 describe("Personal Financing Calculator Test Suite", () => {
-  it.only("User should be able to calculate personal financing with valid data", () => {
+  it("User should be able to calculate personal financing with valid data I", () => {
     enterPersonalFinancingInformation(
       "New",
       "Government",
@@ -59,6 +61,297 @@ describe("Personal Financing Calculator Test Suite", () => {
     cy.get("button[type='submit']").click();
   });
 });
+
+it("User should be able to calculate personal financing with valid data II", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Private",
+    "SANABIL INVESTMENT",
+    "1000000",
+    "10000",
+    "3200",
+    "2300",
+    "One Month",
+    "Samba",
+    "Yes",
+    "yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data III", () => {
+  enterPersonalFinancingInformation(
+    "new",
+    "Military Sector",
+    "Border Guard MIL",
+    "1000",
+    "10000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data IV", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "0",
+    "10000",
+    "0",
+    "2300",
+    "One Month",
+    "The Saudi Investment Bank",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data V", () => {
+  enterPersonalFinancingInformation(
+    "New",
+    "Government",
+    "SANABIL INVESTMENT",
+    "0",
+    "10000",
+    "0",
+    "2300",
+    "One Month",
+    "Samba",
+    "No",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data VI", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "0",
+    "10000",
+    "0",
+    "2300",
+    "One Month",
+    "Samba",
+    "No",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data VII", () => {
+  enterPersonalFinancingInformation(
+    "New",
+    "Government",
+    "SANABIL INVESTMENT",
+    "0",
+    "10000",
+    "0",
+    "2300",
+    "One Month",
+    "Samba",
+    "No",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data VIII", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "Ministry of Education",
+    "1",
+    "10000",
+    "0",
+    "2300",
+    "One Month",
+    "Samba",
+    "No",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data IX", () => {
+  enterPersonalFinancingInformation(
+    "New",
+    "Government",
+    "SANABIL INVESTMENT",
+    "100000",
+    "1000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data X", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "Social Development Bank",
+    "-1",
+    "-100",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "No",
+    "No",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data XI", () => {
+  enterPersonalFinancingInformation(
+    "New",
+    "Government",
+    "SANABIL INVESTMENT",
+    "100000",
+    "100000",
+    "2",
+    "0",
+    "One Month",
+    "Samba",
+    "No",
+    "No",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data XII", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "100000",
+    "1000",
+    "0",
+    "2",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data XIII", () => {
+  enterPersonalFinancingInformation(
+    "New",
+    "Government",
+    "SANABIL INVESTMENT",
+    "100000",
+    "-555.4",
+    "ower",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data XIV", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Private",
+    "Emirates NBD- NST",
+    "100000",
+    "-1",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1426"
+  );
+});
+
+it("User should be able to calculate personal financing with valid data XV", () => {
+  enterDefaultPersonalFinancingInformation();
+});
+
+it("User should be able to calculate personal financing with valid data XVI", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "0",
+    "0",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1425"
+  );
+});
+
+function enterDefaultPersonalFinancingInformation() {
+  cy.visit("https://waset.sa/personal-financing");
+  cy.get("#service_months_no").select(serviceMonths, { force: true });
+  cy.get("#mortgage_loan").select(haveMortgageLoan, { force: true });
+  cy.get("button[type='submit']").click();
+}
 
 function enterPersonalFinancingInformation(
   type,
