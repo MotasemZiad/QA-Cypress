@@ -343,7 +343,92 @@ it.only("User should be able to calculate personal financing with valid data XVI
     "Saudi",
     "1",
     "Muharram",
-    "1425"
+    "1425",
+    "1"
+  );
+});
+
+it.only("User should be able to calculate personal financing with valid data XVII", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "1000",
+    "1000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1425",
+    "2"
+  );
+});
+
+it.only("User should be able to calculate personal financing with valid data XVII", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "1000",
+    "1000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1425",
+    "3"
+  );
+});
+
+it.only("User should be able to calculate personal financing with valid data XIX", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "1000",
+    "1000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1425",
+    "4"
+  );
+});
+
+it.only("User should be able to calculate personal financing with valid data XX", () => {
+  enterPersonalFinancingInformation(
+    "Buyout",
+    "Government",
+    "SANABIL INVESTMENT",
+    "1000",
+    "1000",
+    "0",
+    "0",
+    "One Month",
+    "Samba",
+    "Yes",
+    "Yes",
+    "Saudi",
+    "1",
+    "Muharram",
+    "1425",
+    "5"
   );
 });
 
