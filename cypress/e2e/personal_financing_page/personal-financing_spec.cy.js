@@ -74,7 +74,7 @@ it("User should be able to calculate personal financing with valid data II", () 
     "One Month",
     "Samba",
     "Yes",
-    "yes",
+    "Yes",
     "Saudi",
     "1",
     "Muharram",
@@ -84,8 +84,8 @@ it("User should be able to calculate personal financing with valid data II", () 
 
 it("User should be able to calculate personal financing with valid data III", () => {
   enterPersonalFinancingInformation(
-    "new",
-    "Military Sector",
+    "New",
+    "Military sector",
     "Border Guard MIL",
     "1000",
     "10000",
@@ -94,7 +94,7 @@ it("User should be able to calculate personal financing with valid data III", ()
     "One Month",
     "Samba",
     "Yes",
-    "yes",
+    "Yes",
     "Saudi",
     "1",
     "Muharram",
@@ -323,10 +323,11 @@ it("User should be able to calculate personal financing with valid data XIV", ()
 });
 
 it("User should be able to calculate personal financing with valid data XV", () => {
-  enterDefaultPersonalFinancingInformation();
+  cy.visit("https://waset.sa/personal-financing");
+  cy.get("button[type='submit']").click();
 });
 
-it("User should be able to calculate personal financing with valid data XVI", () => {
+it.only("User should be able to calculate personal financing with valid data XVI", () => {
   enterPersonalFinancingInformation(
     "Buyout",
     "Government",
@@ -345,13 +346,6 @@ it("User should be able to calculate personal financing with valid data XVI", ()
     "1425"
   );
 });
-
-function enterDefaultPersonalFinancingInformation() {
-  cy.visit("https://waset.sa/personal-financing");
-  cy.get("#service_months_no").select(serviceMonths, { force: true });
-  cy.get("#mortgage_loan").select(haveMortgageLoan, { force: true });
-  cy.get("button[type='submit']").click();
-}
 
 function enterPersonalFinancingInformation(
   type,
