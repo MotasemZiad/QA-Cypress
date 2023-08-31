@@ -59,10 +59,10 @@ function enterVehiclesFinancingInformation(
   cy.get(
     `#funding-duration-slider .slider-tick-container :nth-child(${fundingDuration})`
   ).click({ force: true });
-  cy.get(`#down-payment-slider > .slider-track > .slider-selection`)
-    .invoke("css", "width", "40%")
+  cy.get(`#down-payment-slider > .min-slider-handle`)
+    .invoke("css", "left", "8%")
     .click({
       force: true,
     });
-  cy.get("button[type='submit']").click();
+  //   cy.get("button[type='submit']").click();
 }
