@@ -12,18 +12,18 @@ describe("Guru99 Register", () => {
     it("should be able to register with valid credentials", () => {
 
         cy.fixture("register_data").then((user) => {
-            registerPage.enterFirstName(user.firstName);
-            registerPage.enterLastName(user.lastName);
-            registerPage.enterPhone(user.phone);
-            registerPage.enterEmail(user.email);
-            registerPage.enterAddress(user.address);
-            registerPage.enterCity(user.city);
-            registerPage.enterState(user.state);
-            registerPage.enterPostalCode(user.postalCode);
-            registerPage.selectCountry(user.country);
-            registerPage.enterUsername(user.username);
-            registerPage.enterPassword(user.password);
-            registerPage.enterConfirmPassword(user.confirmPassword);
+            registerPage.enterFirstName(user['validCredentials'].firstName);
+            registerPage.enterLastName(user['validCredentials'].lastName);
+            registerPage.enterPhone(user['validCredentials'].phone);
+            registerPage.enterEmail(user['validCredentials'].email);
+            registerPage.enterAddress(user['validCredentials'].address);
+            registerPage.enterCity(user['validCredentials'].city);
+            registerPage.enterState(user['validCredentials'].state);
+            registerPage.enterPostalCode(user['validCredentials'].postalCode);
+            registerPage.selectCountry(user['validCredentials'].country);
+            registerPage.enterUsername(user['validCredentials'].username);
+            registerPage.enterPassword(user['validCredentials'].password);
+            registerPage.enterConfirmPassword(user['validCredentials'].confirmPassword);
             registerPage.clickSubmit();
         })
 
