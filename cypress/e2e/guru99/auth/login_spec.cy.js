@@ -9,16 +9,21 @@ describe("Guru99 Login", () => {
         cy.visit("https://demo.guru99.com/test/newtours/login.php")
     })
     it("should be able to login with valid credentials", () => {
-        loginPage.enterUsername("motasemabunima");
-        loginPage.enterPassword("123123");
-        loginPage.clickSubmit();
+        cy.fixture("login_data").then((user) => {
+            loginPage.enterUsername(user.validCredentials.username);
+            loginPage.enterPassword(user['validCredentials'].password);
+            loginPage.clickSubmit();
+        })
+
         loginPage.elements.successText().contains("Login Successfully");
     });
 
     it("should not be able to login with invalid credentials", () => {
-        loginPage.enterUsername("motasemabunima");
-        loginPage.enterPassword("123456");
-        loginPage.clickSubmit();
+        cy.fixture("login_data").then((user) => {
+            loginPage.enterUsername(user.invalidCredentials.username);
+            loginPage.enterPassword(user['invalidCredentials'].password);
+            loginPage.clickSubmit();
+        })
         loginPage.elements.errorText().contains("Enter your userName and password correct");
     });
 })

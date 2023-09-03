@@ -1,0 +1,31 @@
+{
+    "validCredentials": {
+        "firstName": "Ahmed",
+        "lastName": "Zaki",
+        "phone": "0599863514",
+        "email": "ahmedzak@gmail.com",
+        "address": "Abasan",
+        "city": "Khan Younis",
+        "state": "Gaza",
+        "postalCode": "00972",
+        "country": "GAZA STRIP",
+        "username": "ahmedzak",
+        "password": "123123",
+        "confirmPassword": "123123"
+    },
+
+    "invalidCredentials": {
+        "firstName": "Ahmed",
+        "lastName": "Zaki",
+        "phone": "error text",
+        "email": "ahmedzak@gmail.com",
+        "address": "Abasan",
+        "city": "Khan Younis",
+        "state": "Gaza",
+        "postalCode": "error text",
+        "country": "GAZA STRIP",
+        "username": "ahmedzak",
+        "password": "123123",
+        "confirmPassword": "123123"
+    }
+}
