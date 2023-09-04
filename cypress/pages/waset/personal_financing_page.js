@@ -1,4 +1,4 @@
-class PersonalFinancingPage {
+export default class PersonalFinancingPage {
   elements = {
     typeInput: () => cy.get("#type"),
     sectorInput: () => cy.get("#sector_code"),
@@ -93,4 +93,4 @@ class PersonalFinancingPage {
   }
 }
 
-export default PersonalFinancingPage;
+// export default PersonalFinancingPage;
