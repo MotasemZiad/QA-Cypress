@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import RegisterPage from "../../../pages/register_page";
+import RegisterPage from "../../../pages/guru99/register_page";
 
 describe("Guru99 Register", () => {
     const registerPage = new RegisterPage();
